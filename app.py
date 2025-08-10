@@ -110,7 +110,6 @@ def send_message_via_applescript(phone_number, message):
     app.logger.info(f"SMS 전송 시작 - 번호: {masked_phone}, 메시지 길이: {len(message)}자")
     
     # 전화번호 형식 정리
-    original_phone = phone_number
     phone_number = re.sub(r'[^\d+]', '', phone_number)
     app.logger.debug(f"전화번호 정리 완료")
     
